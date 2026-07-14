@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "reinspection-decision-agent"
+version = "1.0.0"
+description = "Decision agent that determines whether additional inspection passes are needed before generating a final report"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [
+    {name = "Khalid Khan", email = "khalidkhan541@example.com"}
+]
+keywords = ["inspection", "decision-agent", "risk-assessment", "quality-control"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries",
+]
+
+[project.urls]
+Homepage = "https://github.com/KhalidKhan541/reinspection-decision-agent"
+Repository = "https://github.com/KhalidKhan541/reinspection-decision-agent"
+Issues = "https://github.com/KhalidKhan541/reinspection-decision-agent/issues"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
